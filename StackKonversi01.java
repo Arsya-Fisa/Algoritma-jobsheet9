@@ -16,10 +16,11 @@ public class StackKonversi01 {
     }
     public void push(int data){
         if (!isFull()) {
-            System.out.println("Stack penuh! ");
-        } else {
             top++;
             tumpukanBiner[top] = data;
+        } else {
+            System.out.println("Stack penuh! ");
+            
         }
     }
     public int pop(){
